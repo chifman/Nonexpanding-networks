@@ -12,7 +12,7 @@ Our example contains 24 local activation function over three states {0,1,2} and 
 
 ## Model input
 The model is written in plain text. Each line corresponds to one local activation function. For example, our model has 24 variable, thus line one contains equation for the local activation function f~x1~ for the variable x1, line two the function f~x2~  for the variable x2, etc. If functions contain operators *max* and *min* then one can just type them as 
-```r max()``` and ```r min()```. If one also has an operator *not* the script *nonexpanding_check.R* will take care of that. To enter equations or parts that must be computed *modulo n* the following syntax can be used:
+```max()``` and ```min()```. If one also has an operator *not* the script *nonexpanding_check.R* will take care of that. To enter equations or parts that must be computed *modulo n* the following syntax can be used:
 ```r
 <your equation>%%n
 ```
