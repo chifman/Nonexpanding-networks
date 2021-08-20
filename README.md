@@ -6,7 +6,7 @@ The code checks each local activation function on its input nodes (see details a
 
 Current scripts are specific to ternary models but can be adjusted for any number of states (scripts indicate where the adjustments must be made).
 
-As of right now the code runs exhaustively. If the function is defined on three inputs and the model is ternary, then 27 possible states will be generated: 000, 001, 002, to 222. After that all possible pairs of states are created (ignoring pairs such as (000, 000), (111,111), (021, 021) etc., and the distance is computed for pairs that are close (see manuscript for definitions). 
+As of right now the code runs exhaustively. If the function is defined on three inputs and the model is ternary, then 27 possible states will be generated: 000, 001, 002, to 222. After that all possible pairs of states are created (ignoring pairs such as (000, 000), (111,111), (021, 021) etc.), and the distance is computed for pairs that are close (see manuscript for definitions). 
 
 Our example contains 24 local activation function over three states {0,1,2} and with 5 inputs as a maximum for one of the functions. The code runs under 30 sec. The model was published in [PLOS Computational Biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005352). If each activation function has less than 15 inputs in ternary case, the code will run in reasonable time.  We did not investigate at this stage running times for larger state models. Scripts provided right now are still exploratory. 
 
