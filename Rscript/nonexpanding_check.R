@@ -44,7 +44,7 @@ source("./Rscript/local_activation_functions.R")
 #Get the number of functions in the file
 number_of_functions<-length(readLines("./Rscript/local_activation_functions.R"))
 
-#Define one additional fucntion for the NOT operator. Operators MAX and MIN are part of R. 
+#Define one additional function for the NOT operator. Operators MAX and MIN are part of R. 
 #Replace 2 with appropriate state, e.g. if model is 5-ary then use {4-x}.
 
 not<-function(x){2-x}

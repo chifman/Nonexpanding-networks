@@ -27,6 +27,6 @@ for(i in 1:length(model))
 	}
 }
 
-# save to table R functions with the extension to .R
+# save to table R functions with the extension .R
 # this file then can be used with the second R script nonexpanding_check.R
 write.table(model_out, file="./Rscript/local_activation_functions.R", quote=FALSE, row.names=FALSE, col.names=FALSE)
