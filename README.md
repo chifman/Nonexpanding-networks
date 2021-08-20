@@ -11,7 +11,7 @@ As of right now the code runs exhaustively. If the function is defined on three 
 Our example contains 24 local activation function over three states {0,1,2} and with 5 inputs as a maximum for one of the functions. The code runs under 7 sec. The model was published in [PLOS Computational Biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005352). If each activation function has less than 15 inputs in ternary case, the code will run in reasonable time.  We did not investigate at this stage running times for larger state models. Scripts provided right now are still exploratory. 
 
 ## Model input
-The model is written in plain text. Each line corresponds to one local activation function. For example, our model has 24 variable, thus line one contains equation for the local activation function f<sub>x1</sub> for the variable x1, line two the function f<sub>x2</sub>  for the variable x2, etc. If functions contain operators *max* and *min* then one can just type them as 
+The model is written in plain text. Each line corresponds to one local activation function. For example, our model has 24 variables, thus line one contains equation for the local activation function f<sub>x1</sub> for the variable x1, line two the function f<sub>x2</sub>  for the variable x2, etc. If functions contain operators *max* and *min* then one can just type them as 
 ```max()``` and ```min()``` as they are part or R. If one also has an operator *not* the script *nonexpanding_check.R* will take care of that. To enter equations or parts that must be computed *modulo n* the following syntax can be used: ```<your equation>%%n```, where *n* can be any integer. 
 
 ## Running R scripts
