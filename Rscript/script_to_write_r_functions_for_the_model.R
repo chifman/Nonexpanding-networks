@@ -1,6 +1,6 @@
 # Read dynamical system (in this case iron model) with 24 lines. 
 # Each line corresponds to a local activation function
-model<-readLines("/Users/chifman/OneDrive - american.edu/Generalized_Boolean_Models/computations/iron_24_node.txt")
+model<-readLines("./Models/iron_24_node.txt")
 
 # create an empty vector that will be used to write an R function to be used later for distance computations.
 model_out<-c()

@@ -1,4 +1,5 @@
-#This code uses each local activation function to check of |f_v(x)-f_v(y)|<=1. It does not use vectors x and y when x=y. 
+#This code uses each local activation function to check of |f_v(x)-f_v(y)|<=1.
+#It does not use vectors x and y when x=y.
 #Loop creates a table of all possible ordered pairs ove {0,1,2} for the number of inputs. For Example, if 
 #local activation function has 3 inputs then a table of the form below will be created using expand.grid() function:
 #Var1 Var2 Var3
@@ -34,6 +35,9 @@
 #All rows (vectors) in the ordered list that are close are then used to compute abs(f(x)-f(y)). 
 #Results are stored in the vector distance().
 #For loop goes through all 24 local fucntions. To check if any of them returned a value of 2 one can use table(distance)
+
+
+#To write local activation function below one can use R script script_to_write_r_functions_for_the_model.R
 
 local_activation_function_1<-function(x2, x8, x3, x4, x23){min(max(x2,x8),min(min(NOT(x3),NOT(x4)),NOT(x23)))}
 local_activation_function_2<-function(x5, x6, x19){max(max((x5^2)%%3,x6),x19)}
