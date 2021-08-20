@@ -10,6 +10,9 @@ As of right now the code runs exhaustively. If the function is defined on three 
 
 Our example contains 24 local activation function over three states {0,1,2} and with 5 inputs as a maximum for one of the functions. The code runs under 7 sec. The model was published in [PLOS Computational Biology](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005352). If each activation function has less than 15 inputs in ternary case, the code will run in reasonable time.  We did not investigate at this stage running times for larger state models. Scripts provided right now are still exploratory. 
 
+## Model input
+The model is written in plain text. Each line corresponds to one local activation function. 
+
 ## Running R scripts
 There are two scripts. 
 
