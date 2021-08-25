@@ -1,9 +1,15 @@
-# Read dynamical system (in this case iron model) with 24 lines. 
+# Read dynamical system; in this case iron model with 24 lines.
 # Each line corresponds to a local activation function written in order,
 # e.g., line 1 corresponds to variable x1, line 2 to x2, etc.
+########################################################################
+# NOTE:
+# current version will be looking for variable names x1, x2, x3, ...
+# text file *.txt should contain only x1, x2, x3, ...
+########################################################################
 
 library(stringr)
 
+# change file name if running different functions
 model<-readLines("./Models/iron_24_node.txt")
 
 # create an empty vector that will be used to write an R function to be used later for distance computations.

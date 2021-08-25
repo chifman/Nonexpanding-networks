@@ -49,10 +49,10 @@ number_of_functions<-length(readLines("./Rscript/local_activation_functions.R"))
 
 not<-function(x){2-x}
 
-#Define an empty vector to hold results
+#Define an empty vector to hold results and set the counter 
 
 distance<-c()
-
+counter = 0
 #In the for loop replace list(0:2) with appropriate state, e.g. if model is 5-ary then use list(0:4)
 
 for(j in 1:number_of_functions)
@@ -66,11 +66,12 @@ colnames(all_v)<-c()
 	if(max(abs(as.numeric(all_v[all_c[,i][[1]],])-as.numeric(all_v[all_c[,i][[2]],])))<2)
 		{
 		
-				distance[i]<-abs(
+				distance[counter]<-abs(
 				do.call(noquote(paste("local_activation_function_",j,sep="")),all_v[all_c[,i][[1]],])
 				-do.call(noquote(paste("local_activation_function_",j,sep="")),all_v[all_c[,i][[2]],]))
 
 		}
+		counter = counter+1
 	}
 }
 
