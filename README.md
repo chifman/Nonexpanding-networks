@@ -2,7 +2,7 @@
 
 Simple R script to check if an n-ary discrete dynamical system is nonexpanding. 
 
-The code checks each local activation function on its input nodes. For details, definitions and terminology see *will insert link to preprint on arXiv here*.
+The code checks each local activation function on its input nodes. For details, definitions and terminology see our  [preprint](https://arxiv.org/pdf/2109.03711.pdf).
 
 Current scripts are specific to ternary models but can be adjusted for any number of states (scripts indicate where the adjustments must be made).
 
