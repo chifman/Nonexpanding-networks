@@ -1,6 +1,6 @@
 # Nonexpanding-networks
 
-Simple R script to check if an n-ary discrete dynamical system is nonexpanding. 
+Simple R script to check if a q-ary discrete dynamical system is nonexpanding. 
 
 The code checks each local activation function on its input nodes. For details, definitions and terminology see our  [article](https://link.springer.com/article/10.1007/s00285-022-01796-2).
 
